@@ -1,0 +1,57 @@
+<%include ./navbarguru%>
+
+<div class="container">
+    <div class="card m-2">
+        <h5 class="card-header"></h5>
+        <div class="card-body">
+          <h5 class="card-title">Upload Tugas <%=mapel%>, <%=kelas%> <%=jurusan%> <%=lokal%></h5>
+          <%include ../massages%>
+          <form action="/guru/upload/tugas/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>" enctype="multipart/form-data" method="post">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Tanggal Pertemuan</label>
+                <input type="date" 
+                class="form-control"
+                id="tanggal"
+                name="tanggal">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Tanggal Batas Pengumpulan Tugas</label>
+              <input type="date" 
+              class="form-control"
+              id="tanggalakhir"
+              name="tanggalakhir">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Judul Tugas</label>
+              <input type="text" 
+              class="form-control"
+              id="namatugas"
+              name="namatugas">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Keterangan Tugas</label>
+                <textarea class="form-control" 
+                id="keterangan" 
+                name="keterangan"
+                rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Upload File Tugas PDF, Word, PPT, Excel, JPG, PNG</label>
+                <input type="file" 
+                class="form-control-file border" 
+                id="file"
+                name="file" required>
+            </div>
+            <center>
+            <button type="submit" class="btn" style="color:#ccc ; background-color: #18225D; width: 45%;"><i class="fas fa-file-upload"></i> Kirim Tugas</button>
+            <a href="/guru/lihat/tugas/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>" class="btn" style="color:#ccc ; background-color: #18225D; width: 45%;"><i class="fas fa-chevron-left"></i> Kembali</a>
+            </center>
+          </form>
+
+        </div>
+      </div>
+</div>

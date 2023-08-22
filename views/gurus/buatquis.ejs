@@ -1,0 +1,40 @@
+<%include ./navbarguru%>
+
+<div class="container mt-1" style="overflow: scroll;">
+    <div class="row">
+        <div class="col-lg-10">
+
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Soal</th>
+                    <th scope="col">Batas Waktu</th>
+                    <th scope="col">Jenis Soal</th>
+                    <th scope="col">Action Soal Quis</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% for (data of ListJudul){ %>
+                  <tr>
+                    <th scope="row"><%=data.no%></th>
+                    <td><%=data.namaquis%></td>
+                    <td><%=data.tanggalmulai%>/<%=data.bulanmulai%>/<%=data.tahunmulai%> s.d <%=data.tanggalakhir%>/<%=data.bulanakhir%>/<%=data.tahunakhir%></td>
+                    <td>Soal <%=data.jenissoal%> <br> Durasi <%=data.jam%>:<%=data.menit%></td>
+                    <td>
+                        <a href="/guru/quis/editjudul/<%=data.jenissoal%>/<%=data.kelas%>/<%=data.jurusan%>/<%=data.lokal%>/<%=data.mapel%>/<%=data.idguru%>/<%=data.id%>" class="btn" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-edit"></i> Edit</a>
+                        <a href="/guru/quis/hapusjudul/<%=data.jenissoal%>/<%=data.kelas%>/<%=data.jurusan%>/<%=data.lokal%>/<%=data.mapel%>/<%=data.idguru%>/<%=data.id%>" class="btn" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-trash-alt"></i> Hapus</a>
+                        <a href="/guru/quis/cek/siswakumpul/<%=data.jenissoal%>/<%=data.kelas%>/<%=data.jurusan%>/<%=data.lokal%>/<%=data.mapel%>/<%=data.idguru%>/<%=data.id%>" class="btn" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-eye"></i> lihat</a>
+                    </td>
+                  </tr>
+                  <% } %>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="col-lg-2">
+            <a href="/guru/buat/quis/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>" class="btn mt-1" style="width: 100%; color:#ccc ; background-color: #18225D;"><i class="fas fa-plus"></i> Buat Quiz</a>
+            <a href="/guru/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>" class="btn mt-1" style="width: 100%; color:#ccc ; background-color: #18225D;"><i class="fas fa-chevron-left"></i> Kembali</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,93 @@
+<%include ./navbarsiswa%>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <div class="card p-3">
+                <div class="card-body">
+                    <form action="/siswa/quis/Essay/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=siswa.id%>/<%=quis.id%>/<%=soal.id%>/<%=jam%>/<%=menit%>/<%=detik%>/<%=soal.nosoal%>" method="post">
+                        <h5><%=soal.nosoal%>.) <%=soal.soal%> </h5>
+
+                        <br>
+                        <div class="form-group">
+                            <input type="text" 
+                            class="form-control" 
+                            id="jam"
+                            name="jam"
+                            value="<%=jam%>" hidden>
+                          </div>
+  
+                          <div class="form-group">
+                            <input type="text" 
+                            class="form-control" 
+                            id="menit"
+                            name="menit"
+                            value="<%=menit%>" hidden>
+                          </div>
+  
+                          <div class="form-group">
+                            <input type="text" 
+                            class="form-control" 
+                            id="detik"
+                            name="detik"
+                            value="<%=detik%>" hidden>
+                          </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Ketik Jawaban disini</label>
+                            <textarea class="form-control" 
+                            id="jawab"
+                            name="jawab"
+                            rows="3"><%=jawabessay.jawaban%> </textarea>
+                        </div>
+                        <center>
+                          <p class="waktu">Sisa Waktu : 00.00</p>
+                        <a href="/siswa/quis/Essay/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=siswa.id%>/<%=quis.id%>/<%=jam%>/<%=menit%>/<%=detik%>/<%=mundur%>" class="btn col-lg-4 <%=tombol%>" style="color:#ccc ; background-color: #18225D;">Sebelum</a>
+                        <button type="submit" class="btn col-lg-4" style="color:#ccc ; background-color: #18225D;">Berikutnya</button>
+                        </center>
+                    </form>
+
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+<script>
+  //time;
+  var jam=<%=jam%>;
+  var menit=<%=menit%>;
+  var detik=<%=detik%>;
+
+  //logika;
+  setInterval(function(){
+      detik=detik-1;
+
+      if(jam>0&&menit==0){
+          jam=jam-1;
+          menit=60;
+      }
+      if(menit>0&&detik<1){
+          menit=menit-1;
+          detik=59;
+      }
+      if(jam==0&&menit==0&detik==0){
+          console.log('waktu habis');
+          window.location.href='<%=habis%>';
+      }
+
+      const waktu=document.querySelector('.waktu');
+      waktu.innerHTML="Waktu Tersisa "+jam+':'+menit+':'+detik;
+
+      //masukan kedalam value input;
+      //jam
+      var bjam=document.getElementById('jam').value=jam;
+      //menit
+      var bmenit=document.getElementById('menit').value=menit;
+      //detik
+      var bdetik=document.getElementById('detik').value=detik;
+
+      console.log(jam+':'+menit+':'+detik);
+  },1000);
+</script>

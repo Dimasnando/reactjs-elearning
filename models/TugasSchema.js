@@ -1,0 +1,84 @@
+// akun pendaftar
+
+const mongoose = require("mongoose");
+
+const TugasSchema=new mongoose.Schema({
+
+    //kelas
+    kelas:{
+        type:String,
+        required:true
+    },
+    jurusan:{
+        type:String,
+        required:true
+    },
+    lokal:{
+        type:String,
+        required:true
+    },
+    mapel:{
+        type:String,
+        required:true
+    },
+    //materi
+    tanggal:{
+        type:String,
+        required:true
+    },
+    tanggalakhir:{
+        type:String,
+        required:true
+    },
+    namatugas:{
+        type:String,
+        required:true
+    },
+    keterangan:{
+        type:String,
+        required:true
+    },
+    guru:{
+        type:String,
+        required:true
+    },
+    //file
+    destination:{
+        type:String,
+        required:true
+    },
+    encoding:{
+        type:String,
+        required:true
+    },
+    fieldname:{
+        type:String,
+        required:true
+    },
+    filename:{
+        type:String,
+        required:true
+    },
+    mimetype:{
+        type:String,
+        required:true
+    },
+    originalname:{
+        type:String,
+        required:true
+    },
+    path:{
+        type:String,
+        required:true
+    },
+    size:{
+        type:String,
+        required:true
+    },
+    tampilkan:{
+        type:String,
+        required:true
+    },
+});
+
+module.exports=mongoose.model("Tugas",TugasSchema);

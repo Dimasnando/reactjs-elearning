@@ -1,0 +1,88 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+
+            <div class="card">
+                <div class="card-header">
+                  Soal Pilihan Ganda
+                </div>
+                <div class="card-body">
+                    <%include ../massages%>
+                    <form action="/guru/edit/soal/quis/Pilgan/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=quis.id%>/<%=soal.id%>" method="post">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Soal nomor <%=soal.nosoal%></label>
+                            <textarea class="form-control" 
+                            id="soal"
+                            name="soal" 
+                            rows="3"><%=soal.soal%></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">A.</label>
+                            <input type="text" 
+                            class="form-control" 
+                            id="A"
+                            name="A"
+                            value="<%=soal.A%>">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">B.</label>
+                            <input type="text" 
+                            class="form-control" 
+                            id="B"
+                            name="B"
+                            value="<%=soal.B%>">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">C.</label>
+                            <input type="text" 
+                            class="form-control" 
+                            id="C"
+                            name="C"
+                            value="<%=soal.C%>">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">D.</label>
+                            <input type="text" 
+                            class="form-control" 
+                            id="D"
+                            name="D"
+                            value="<%=soal.D%>">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">E.</label>
+                            <input type="text" 
+                            class="form-control" 
+                            id="E"
+                            name="E"
+                            value="<%=soal.E%>">
+                        </div>
+
+                        <div class="form-group mb-5">
+                            <label for="exampleInputPassword1">Kunci Jawaban</label><br>
+                            <select class="form-control"
+                            id="kunci"
+                            name="kunci">
+                                <option value="<%=soal.kunci%>"><%=soal.kunci%></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
+                            </select>
+                        </div>
+
+                        <center>
+                            <button type="submit" class="btn col-lg-5 mt-3" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-file-upload"></i> Simpan Perubahan</button>
+                            <a href="/guru/quis/editjudul/Pilgan/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=quis.id%>" class="btn col-lg-5 mt-3" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-chevron-left"></i> Kembali</a>
+                        </center>
+                    </form>
+                    
+                </div>
+              </div>
+
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</div>

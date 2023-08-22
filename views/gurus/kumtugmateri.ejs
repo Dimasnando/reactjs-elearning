@@ -1,0 +1,63 @@
+<%include ./navbarguru%>
+
+<div class="container" style="overflow: scroll;">
+  <h3>Siswa yang mengumpulkan tugas</h3>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nama Siswa</th>
+            <th scope="col">Dikumpulkan Pada</th>
+            <th scope="col">Lihat Tugas</th>
+            <th scope="col">Nilai</th>
+            <th scope="col">Beri Nilai</th>
+          </tr>
+        </thead>
+        <tbody>
+          <%for(data of ListTugasSiswa){%>
+          <tr>
+            <th scope="row"><%=data.nosiskum%></th>
+            <td><h5><%=data.namasiswa%></h5></td>
+            <td><%=data.tanggalkumpul%></td>
+            <td><a href="/strong/<%=data.filename%>" class="btn" download>Unduh file</a></td>
+            <td style="color: green;"><%=data.nilai%>/100</td>
+            <td><a href="/guru/berinilai/tugassiswa/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=materi.id%>/<%=data.id%>" class="btn m-1" style="color:#ccc ; background-color: #18225D; ">Nilai</a> 
+                <a href="/guru/hapus/tugassiswa/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=materi.id%>/<%=data.id%>" class="btn m-1" style="color:#ccc ; background-color: #18225D; ">Hapus</a>
+            </td>
+          </tr>
+          <%}%>
+        </tbody>
+    </table>
+<!--
+    <h3>Data semua siswa</h3>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nama Siswa</th>
+            <th scope="col">Dikumpulkan Pada</th>
+            <th scope="col">Lihat Tugas</th>
+            <th scope="col">Nilai</th>
+            <th scope="col">Beri Nilai</th>
+          </tr>
+        </thead>
+        <tbody>
+          <%for(data of ListSiswas){%>
+          <tr>
+            <th scope="row"><%=data.nosis%></th>
+            <td><h5><%=data.nama%></h5></td>
+            <td>Belum ada</td>
+            <td><a href="#" class="btn" download>Belum ada file</a></td>
+            <td style="color: green;">0/100</td>
+            <td><a href="" class="btn" style="color:#ccc ; background-color: #18225D; ">Nilai</a> 
+                <a href="" class="btn" style="color:#ccc ; background-color: #18225D; ">Hapus</a>
+            </td>
+          </tr>
+          <%}%>
+        </tbody>
+    </table>
+-->
+
+
+      <a href="/guru/lihat/tugas/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>" class="btn">Kembali</a>
+</div>

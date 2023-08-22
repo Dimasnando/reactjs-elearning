@@ -1,0 +1,55 @@
+<%include ./navbarguru%>
+
+<div class="container mt-4">
+
+        <div id="layoutSidenav_content">
+            <main>
+                    <div class="card mb-4" style="color: #18225D;">
+                        <div class="card-header">
+                            <i class="fas fa-table mr-1"></i>
+                            Jadwal Mengajar Guru
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Jadwal</th>
+                                            <th>Mata Pelajaran</th>
+                                            <th>Kelas</th>
+                                            <th>Jurusan</th>
+                                            <th>Lokal</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Jadwal</th>
+                                            <th>Mata Pelajaran</th>
+                                            <th>Kelas</th>
+                                            <th>Jurusan</th>
+                                            <th>Lokal</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <%for(data of ListMapels){%>
+                                        <tr>
+                                            <td><%=data.hari%> <%=data.jam%></td>
+                                            <td><%=data.mapel%></td>
+                                            <td><%=data.kelas%></td>
+                                            <td><%=data.jurusan%></td>
+                                            <td><%=data.lokal%></td>
+                                            <td>  <a href="/guru/<%=data.kelas%>/<%=data.jurusan%>/<%=data.lokal%>/<%=data.mapel%>/<%=guru.id%>" class="btn " style="color:#ccc ; background-color: #18225D;">Masuk</a></td>
+                                        </tr>
+                                        <%}%>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                
+            </main>
+        </div>
+
+</div>

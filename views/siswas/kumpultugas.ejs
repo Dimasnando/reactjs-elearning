@@ -1,0 +1,37 @@
+<%include ./navbarsiswa%>
+
+<div class="container">
+    <div class="card m-2">
+        <h5 class="card-header"><%=materi.tanggal%></h5>
+        <div class="card-body">
+          <h5 class="card-title">Pengumpulan Tugas <%=materi.mapel%> <%=materi.namatugas%></h5>
+          <%include ../massages%>
+          <form action="/siswa/kumpultugas/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=siswa.id%>/<%=materi.id%>" enctype="multipart/form-data" method="post">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Guru Pembimbing <%=materi.guru%></label>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Keterangan Tugas</label>
+                <textarea class="form-control" 
+                id="keterangan" 
+                name="keterangan"
+                rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Upload File Tugas</label>
+                <input type="file" 
+                class="form-control-file border" 
+                id="file"
+                name="file" required>
+            </div>
+
+            <button type="submit" class="btn <%=tombol%>" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-file-upload"></i> Kumpul Tugas</button>
+            <a href="/siswa/lihat/tugas/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=siswa.id%>" class="btn" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-chevron-left"></i> Kembali</a>
+
+          </form>
+
+        </div>
+      </div>
+</div>

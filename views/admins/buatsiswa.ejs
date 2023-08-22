@@ -1,0 +1,90 @@
+<%include ./navbaradmin%>
+
+<div class="container">
+    <center>
+        <div class="col-lg-8 col-md-8 p-3 border">
+            <h3 class="mb-30" style="color:#18225D ;">Buat Akun Siswa</h3>
+            <%include ../massages%>
+            <form action="/admin/buatakun/siswa" method="post">
+                <div class="mt-10">
+                    <input type="text" 
+                    name="ndepan"
+                    id="ndepan"
+                    placeholder="Nama depan"
+                    class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input type="text" 
+                    name="nbelakang"
+                    id="nbelakang"
+                    placeholder="Nama belakang"
+                    class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input type="text" 
+                    name="nis"
+                    id="nis"
+                    placeholder="Nomer Induk Siswa"
+                    class="single-input">
+                </div>
+                <div class="mt-10">
+                        <div class="form-select">
+                        <select 
+                        id="angkatan" 
+                        name="angkatan">
+                            <option value="">Angkatan</option>
+                             <option value="XII">2021</option>
+                            <option value="XI">2022</option>
+                            <option value="X">2023</option>
+                        </select>
+                        </div>
+                </div>
+                <div class="mt-10">
+                    <div class="form-select">
+                    <select 
+                    id="jurusan" 
+                    name="jurusan">
+                        <option value="">Jurusan</option>
+                        <option value="IPA">Ilmu Pengetahuan Alam (IPA)</option>
+                        <option value="IPS">Ilmu Pengetahuan Sosial (IPS)</option>
+                    </select>
+                    </div>
+                </div> 
+                <div class="mt-10">
+                    <input type="text" 
+                    name="lokal"
+                    id="lokal"
+                    placeholder="Kode Lokal Misal IPA 1, IPA 2, IPA 3, IPS 1, IPS 2, IPS 3"
+                    class="single-input">
+                </div> 
+                <div class="mt-10">
+                    <input type="email" 
+                    name="email"
+                    id="email"
+                    placeholder="Email Siswa"
+                    class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input type="password" 
+                    name="password1"
+                    id="password1"
+                    placeholder="Password Baru"
+                    class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input type="password" 
+                    name="password2"
+                    id="password2"
+                    placeholder="Ulangi Password Baru"
+                    class="single-input">
+                </div>
+
+                <div class="mt-10">
+                    <button type="submit" class="btn " style="color:#ccc ; background-color: #18225D; width: 45%;">Simpan</button>
+                    <a href="/admin/dashboard" class="btn " style="color:#ccc ; background-color: #18225D; width: 45%;">Kembali</a>
+                </div>
+                
+            </form>
+        </div>
+    </center>
+</div>

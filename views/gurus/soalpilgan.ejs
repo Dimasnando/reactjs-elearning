@@ -1,0 +1,82 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+
+            <div class="card" style="box-shadow: 2px 2px 5px #ccc;">
+                <div class="card-header" style="color:#ccc ; background-color: #18225D;">
+                  <h5 style="color:#ccc ;">Soal Pilihan Ganda</h5>
+                </div>
+                <div class="card-body">
+                    <%include ../massages%>
+                    <form action="/guru/buat/soal/quis/Pilgan/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=idquis%>/<%=nosoal%>" method="post">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Soal nomor <%=nosoal%></label>
+                            <textarea class="form-control" 
+                            id="soal"
+                            name="soal" 
+                            rows="3"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">A.</label>
+                            <input type="text" 
+                            class="form-control" 
+                            id="A"
+                            name="A">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">B.</label>
+                            <input type="text" 
+                            class="form-control" 
+                            id="B"
+                            name="B">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">C.</label>
+                            <input type="text" 
+                            class="form-control" 
+                            id="C"
+                            name="C">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">D.</label>
+                            <input type="text" 
+                            class="form-control" 
+                            id="D"
+                            name="D">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">E.</label>
+                            <input type="text" 
+                            class="form-control" 
+                            id="E"
+                            name="E">
+                        </div>
+
+                        <div class="form-group mb-5">
+                            <label for="exampleInputPassword1">Kunci Jawaban</label><br>
+                            <select class="form-control"
+                            id="kunci"
+                            name="kunci">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
+                            </select>
+                        </div>
+
+                        <center>
+                            <button type="submit" class="btn col-lg-5 mt-3" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-plus"></i> Lanjut Soal Berikutnya</button>
+                            <a href="/guru/quis/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>" class="btn col-lg-5 mt-3" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-chevron-left"></i> Selesaikan</a>
+                        </center>
+                    </form>
+                    
+                </div>
+              </div>
+
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</div>

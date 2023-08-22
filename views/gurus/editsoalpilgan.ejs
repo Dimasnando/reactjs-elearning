@@ -1,0 +1,242 @@
+<%include ./navbarguru%>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-7">
+            <h3>Edit Jadwal</h3>
+            <div class="card">
+                <div class="card-header">
+                  
+                </div>
+                <div class="card-body">
+                    <%include ../massages%>
+                    <form action="/guru/quis/editjudul/Pilgan/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=quis.id%>" method="post">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Nama Quis</label>
+                          <input type="text" 
+                          class="form-control" 
+                          id="namaquis"
+                          name="namaquis"
+                          value="<%=quis.namaquis%>">
+                        </div>
+
+                        <label for="exampleInputEmail1">Jadwal Dibuka Soal Quis</label>
+                        <div class="form-row">
+                            <select class="form-control form-control-sm col"
+                            id="tanggalmulai"
+                            name="tanggalmulai">
+                                <option value="<%=quis.tanggalmulai%>"><%=quis.tanggalmulai%></option>
+                                <option value="01">1</option>
+                                <option value="02">2</option>
+                                <option value="03">3</option>
+                                <option value="04">4</option>
+                                <option value="05">5</option>
+                                <option value="06">6</option>
+                                <option value="07">7</option>
+                                <option value="08">8</option>
+                                <option value="09">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <select class="form-control form-control-sm col"
+                            id="bulanmulai"
+                            name="bulanmulai">
+                                <option value="<%=quis.bulanmulai%>"><%=quis.bulanmulai%></option>
+                                <option value="01">1</option>
+                                <option value="02">2</option>
+                                <option value="03">3</option>
+                                <option value="04">4</option>
+                                <option value="05">5</option>
+                                <option value="06">6</option>
+                                <option value="07">7</option>
+                                <option value="08">8</option>
+                                <option value="09">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <select class="form-control form-control-sm col"
+                            id="tahunmulai"
+                            name="tahunmulai">
+                                <option value="<%=quis.tahunmulai%>"><%=quis.tahunmulai%></option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                            </select>
+                        </div>
+
+                        <label for="exampleInputEmail1">Jadwal Ditutup Soal Quis</label>
+                        <div class="form-row">
+                            <select class="form-control form-control-sm col"
+                            id="tanggalakhir"
+                            name="tanggalakhir">
+                                <option value="<%=quis.tanggalakhir%>"><%=quis.tanggalakhir%></option>
+                                <option value="01">1</option>
+                                <option value="02">2</option>
+                                <option value="03">3</option>
+                                <option value="04">4</option>
+                                <option value="05">5</option>
+                                <option value="06">6</option>
+                                <option value="07">7</option>
+                                <option value="08">8</option>
+                                <option value="09">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <select class="form-control form-control-sm col"
+                            id="bulanakhir"
+                            name="bulanakhir">
+                                <option value="<%=quis.bulanakhir%>"><%=quis.bulanakhir%></option>
+                                <option value="01">1</option>
+                                <option value="02">2</option>
+                                <option value="03">3</option>
+                                <option value="04">4</option>
+                                <option value="05">5</option>
+                                <option value="06">6</option>
+                                <option value="07">7</option>
+                                <option value="08">8</option>
+                                <option value="09">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <select class="form-control form-control-sm col"
+                            id="tahunakhir"
+                            name="tahunakhir">
+                                <option value="<%=quis.tahunakhir%>"><%=quis.tahunakhir%></option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                            </select>
+                        </div>
+
+                        <label for="exampleInputEmail1">Jenis Soal</label>
+                        <div class="form-row">
+                            <select class="form-control form-control-sm col"
+                            id="jenissoal"
+                            name="jenissoal" disabled>
+                                <option value="<%=quis.jenissoal%>"><%=quis.jenissoal%></option>
+                                <option value="Pilgan">Pilihan Ganda</option>
+                                <option value="Essay">Essay</option>
+                            </select>
+                        </div>
+
+                        <label for="exampleInputEmail1">Durasi Mengerjakan Soal</label>
+                        <div class="form-row">
+                            <select class="form-control form-control-sm col"
+                            id="jam"
+                            name="jam">
+                                <option value="<%=quis.jam%>"><%=quis.jam%></option>
+                                <option value="00">00</option>
+                                <option value="01">1</option>
+                                <option value="02">2</option>
+                                <option value="03">3</option>
+                                <option value="04">4</option>
+                                <option value="05">5</option>
+                                <option value="06">6</option>
+                            </select>
+                            <h6 class="mt-3">:</h6>
+                            <select class="form-control form-control-sm col"
+                            id="menit"
+                            name="menit">
+                                <option value="<%=quis.menit%>"><%=quis.menit%></option>
+                                <option value="00">00</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                                <option value="30">30</option>
+                                <option value="35">35</option>
+                                <option value="40">40</option>
+                                <option value="45">45</option>
+                                <option value="50">50</option>
+                                <option value="55">55</option>
+                            </select>
+                        </div>
+
+                        <center>
+                            <button type="submit" class="btn col-lg-5 mt-3" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-file-upload"></i> Simpan Perubahan</button>
+                            <a href="/guru/quis/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>" class="btn col-lg-5 mt-3" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-chevron-left"></i> Selesai</a>
+                        </center>
+                    </form>
+                    
+                </div>
+              </div>
+
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+
+
+    <!--  -->
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-7">
+            <h3>Soal</h3>
+            <% for(data of ListPilgan){ %>
+            <div class="card mt-1">
+                <div class="card-body">
+                  <h5 class="card-title"><%=data.no%>.) <%=data.soal%></h5>
+                  <h6>A. <%=data.A%></h6>
+                  <h6>B. <%=data.B%></h6>
+                  <h6>C. <%=data.C%></h6>
+                  <h6>D. <%=data.D%></h6>
+                  <h6>E. <%=data.E%></h6>
+                  <h6>Kunci Jawaban: <%=data.kunci%></h6>
+                  <center>
+                    <a href="/guru/edit/soal/quis/Pilgan/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=data.idquis%>/<%=data.id%>" class="btn col-lg-5 mt-3" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-edit"></i> Edit Soal</a>
+                    <a href="/guru/hapus/soal/quis/Pilgan/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=data.idquis%>/<%=data.id%>" class="btn col-lg-5 mt-3" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-trash-alt"></i> Hapus Soal</a>
+                  </center>
+                </div>
+            </div>
+            <% } %>
+
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+        
+
+
+</div>

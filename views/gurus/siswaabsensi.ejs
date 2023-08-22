@@ -1,0 +1,32 @@
+<%include ./navbarguru%>
+
+<div class="container" style="overflow: scroll;">
+    <div class="row">
+        <div class="col-lg-10">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nama Siswa</th>
+                    <th scope="col">Tanggal Siswa Absen</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <% for (data of ListKode){ %>
+                  <tr>
+
+                    <td><%=data.no%></td>
+                    <td><%=data.namasiswa%></td>
+                    <td><%=data.tanggalkumpul%></td>
+                  </tr>
+                  <% } %>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-2">
+            <a href="/guru/absensi/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>" class="btn mt-1 col-12" style="color:#ccc ; background-color: #18225D;">Kembali</a>
+        </div>
+    </div>
+</div>

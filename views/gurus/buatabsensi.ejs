@@ -1,0 +1,52 @@
+<%include ./navbarguru%>
+
+<div class="container">
+    <div class="card m-2">
+        <h5 class="card-header"></h5>
+        <div class="card-body">
+          <h5 class="card-title">Buat Absensi Kehadiran <%=mapel%>, <%=kelas%> <%=jurusan%> <%=lokal%></h5>
+          <%include ../massages%>
+          <form action="/guru/buat/absensi/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>" method="post">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Tanggal Pertemuan</label>
+                <input type="date" 
+                class="form-control"
+                id="tanggal"
+                name="tanggal"
+                required>
+            </div>
+
+            <div class="form-group nonaktif">
+              <label for="exampleInputEmail1">Absensi</label>
+              <input type="text" 
+              class="form-control"
+              id="judul"
+              name="judul"
+              value="Pertemuan <%=jumlah%>">
+            </div>
+
+            <div class="form-group nonaktif">
+                <label for="exampleFormControlTextarea1">Keterangan</label>
+                <textarea class="form-control" 
+                id="deskripsi" 
+                name="deskripsi"
+                rows="3">xp<%=jumlah%>st<%=jumlah%></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Kode Absensi</label>
+                <input type="text" 
+                class="form-control"
+                id="kode"
+                name="kode"
+                value="xp<%=jumlah%>st<%=jumlah%>">
+              </div>
+            <center>
+            <button type="submit" class="btn " style="color:#ccc ; background-color: #18225D; width: 45%;"><i class="fas fa-file-upload"></i> Kirim Absensi</button>
+            <a href="/guru/absensi/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>" class="btn " style="color:#ccc ; background-color: #18225D; width: 45%;"><i class="fas fa-chevron-left"></i> Kembali</a>
+            </center>
+          </form>
+
+        </div>
+      </div>
+</div>

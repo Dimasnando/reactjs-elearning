@@ -1,0 +1,43 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+
+            <div class="card" style="box-shadow: 2px 2px 5px #ccc;">
+                <div class="card-header" style="color:#ccc ; background-color: #18225D;">
+                    <h5 style="color:#ccc ;">Soal Essay</h5>
+                </div>
+                <div class="card-body">
+                    <%include ../massages%>
+                    <form action="/guru/buat/soal/quis/Essay/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=idquis%>/<%=nosoal%>" method="post">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Soal nomor <%=nosoal%></label>
+                            <textarea class="form-control" 
+                            id="soal"
+                            name="soal" 
+                            rows="5"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Catatan</label>
+                            <textarea class="form-control" 
+                            id="catatan"
+                            name="catatan" 
+                            rows="3" hidden> </textarea>
+                        </div>
+
+                        
+
+                        <center>
+                            <button type="submit" class="btn col-lg-5 mt-3" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-plus"></i> Lanjut Soal Berikutnya</button>
+                            <a href="/guru/quis/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>" class="btn col-lg-5 mt-3" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-chevron-left"></i> Selesaikan</a>
+                        </center>
+                    </form>
+                    
+                </div>
+              </div>
+
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</div>

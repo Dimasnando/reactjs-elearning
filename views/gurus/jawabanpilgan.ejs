@@ -1,0 +1,45 @@
+<%include ./navbarguru%>
+
+<div class="container mt-4">
+
+    <div id="layoutSidenav_content">
+        <main>
+                <div class="card mb-4" style="color: #18225D;">
+                    <div class="card-header">
+                        <a href="/guru/quis/cek/siswakumpul/Pilgan/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=idquis%>" class="btn " style="color:#ccc ; background-color: #18225D;"><i class="fas fa-chevron-left"></i> Kembali</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Soal</th>
+                                        <th>Jawaban Siswa</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Soal</th>
+                                        <th>Jawaban Siswa</th>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <%for(data of ListJawabans){%>
+                                    <tr>
+                                        <td><%=data.no%>.</td>
+                                        <td><%=data.soal%></td>
+                                        <td><%=data.jawaban%></td>
+                                    </tr>
+                                    <%}%>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            
+        </main>
+    </div>
+
+</div>

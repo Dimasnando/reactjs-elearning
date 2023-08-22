@@ -1,0 +1,60 @@
+<%include ./navbarguru%>
+
+<div class="container mt-4">
+
+    <div id="layoutSidenav_content">
+        <main>
+                <div class="card mb-4" style="color: #18225D;">
+                    <div class="card-header">
+                        <a href="/guru/quis/cek/siswakumpul/Essay/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=idquis%>" class="btn " style="color:#ccc ; background-color: #18225D;"><i class="fas fa-chevron-left"></i> Kembali</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Soal</th>
+                                        <th>Jawaban Siswa</th>
+                                        <th>Beri Nilai</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Soal</th>
+                                        <th>Jawaban Siswa</th>
+                                        <th>Beri Nilai</th>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <%for(data of ListJawabans){%>
+                                    <tr>
+                                        <td><%=data.no%>.</td>
+                                        <td><%=data.soal%></td>
+                                        <td><%=data.jawaban%></td>
+                                        <td>
+                                            <form action="/guru/input/hasil/Essay/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=data.idsiswa%>/<%=idquis%>/<%=data.id%>" method="post">
+                                                <input type="number"
+                                                name="nilai",
+                                                id="nilai" value="<%=data.point%>">
+
+                                                <input type="number"
+                                                name="banding",
+                                                id="banding" value="<%=data.point%>" hidden>
+
+                                                <button type="submit" class="btn " style="color:#ccc ; background-color: #18225D;">Submit</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <%}%>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            
+        </main>
+    </div>
+
+</div>

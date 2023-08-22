@@ -1,0 +1,47 @@
+<%include ./navbarguru%>
+
+<div class="container mt-1">
+    <a href="/guru/upload/tugas/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>" class="btn" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-plus"></i> Tambah Tugas</a>
+    <a href="/guru/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>" class="btn"><i class="fas fa-chevron-left"></i> Kembali</a><br>
+    Tugas Untuk Kelas <%=kelas%> Jurusan <%=jurusan%> Lokal <%=lokal%> Mapel <%=mapel%>
+      <% for (data of ListTugas){ %>
+      <div class="card m-2">
+          <h5 class="card-header"><%=data.tanggal%> s.d <%=data.tanggalakhir%></h5>
+          <div class="card-body">
+            <h5 class="card-title"><%=data.namatugas%></h5>
+            <p class="card-text"><%=data.keterangan%></p>
+  
+            <div class="gambar <%=data.gambar%> m-2">
+                <center>
+                  <img src="/strong/<%=data.filename%>" width="200px" alt="">
+                </center>
+              
+            </div>
+  
+            <div class="video <%=data.video%>">
+                <center>
+                  <video width="320" height="240" controls>
+                      <source src="/strong/<%=data.filename%>" type="video/mp4">
+                  </video>
+                </center>
+  
+            </div>
+  
+            <div class="document <%=data.document%>">
+                <center>
+                  <i class="fas fa-file" style="font-size: 80px;"></i>
+                  <h6>Document</h6>
+                </center>
+  
+            </div>
+            <!-- Status Posting : <%=data.tampilkan%> <br> -->
+            <a href="/strong/<%=data.filename%>" class="btn btn-secondary" download="<%=data.originalname%>"><i class="fas fa-download"></i> Unduh File</a>
+            <!-- <a href="/guru/posting/tugass/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=data.id%>" class="btn" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-mouse"></i> Posting Tugas</a> -->
+            <a href="/guru/edit/tugass/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=data.id%>" class="btn" style="color:#ccc ; background-color: #18225D;;"><i class="fas fa-edit"></i> Edit Tugas</a>
+            <a href="/guru/hapus/tugass/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=data.id%>" class="btn" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-trash-alt"></i> Hapus Tugas</a>
+            <a href="/guru/pengumpulan/tugas/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=data.id%>" class="btn" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-upload"></i> Data Tugas Siswa</a>
+          </div>
+      </div>
+      <% } %>
+  
+  </div>

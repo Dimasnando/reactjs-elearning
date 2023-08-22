@@ -1,0 +1,961 @@
+lisensi aktif jasaku media
+instagram : @wahyu_illahi07
+whatsapp : 082244666681
+
+31/03/2022 15:50
+target 31/04/2022 15:50
+*membuat halaman index depan, Proses;
+
+01/04/2022 14:55;
+membuat halaman index depan;
+*membuat halaman login admin;
+
+01/04/2022 15:58;
+membuat halaman index depan;
+membuat halaman login admin;
+*membuat action halaman login admin;
+
+01/04/2022 16:10;
+membuat halaman index depan;
+membuat halaman login admin;
+*membuat action halaman login admin, Proses;
+
+01/04/2022 16:38;
+membuat halaman index depan;
+membuat halaman login admin;
+membuat action halaman login admin;
+*membuat halaman dashboard admin;
+======>sejauh ini tidak ada errors;
+
+02/04/2022 12:09;
+membuat halaman dashboard admin;
+*membuat halaman dan action buat akun guru;
+
+03/04/2022 11:45;
+membuat halaman dashboard admin;
+membuat halaman dan action buat akun guru;
+membuat halaman dan action buat akun siswa;
+*membuat halaman dan action kelola akun guru;
+======>sejauh ini tidak ada errors;
+
+12/04/2022 12:02;
+menambah data lokal kelas ke siswa;
+membuat halaman kelola akun guru;
+membuat halaman edit akun guru;
+*membuat action halaman edit akun guru;
+======>sejauh ini tidak ada errors;
+
+13/04/2022 11:54;
+*membuat action halaman edit akun guru, Proses;
+
+14/04/2022 9.58;
+membuat action halaman edit akun guru;
+*membuat action hapus akun guru;
+======>sejauh ini tidak ada errors;
+
+14/04/2022 15.35;
+membuat action hapus akun guru;
+membuat halaman kelola akun siswa;
+*membuat halaman dan action edit akun siswa;
+======>sejauh ini tidak ada errors;
+
+17/04/2022 14:55;
+membuat halaman kelola akun siswa;
+membuat halaman edit akun siswa;
+*membuat action halaman edit akun siswa, Proses;
+*membuat action hapus akun siswa;
+======>sejauh ini tidak ada errors;
+
+18/04/2022 10:53;
+membuat action halaman edit akun siswa;
+membuat action hapus akun siswa;
+*membuat halaman dan action buat jadwal mengajar;
+======>sejauh ini tidak ada errors;
+
+18/04/2022 22:10;
+menambah logo dan jurusan yg sesuai sekolah;
+*membuat halaman dan action buat jadwal mengajar;
+======>sejauh ini tidak ada errors;
+
+19/04/2022 10:25;
+menambah logo dan jurusan yg sesuai sekolah;
+menguji apakah ada errors, tidak ada errors;
+*membuat halaman dan action buat jadwal mengajar;
+======>sejauh ini tidak ada errors;
+
+19/04/2022 15:45;
+membuat halaman buat jadwal mengajar;
+*membuat action halaman buat jadwal mengajar;
+
+
+29/04/2022 20:15;
+membuat halaman buat jadwal mengajar;
+membuat action halaman buat jadwal mengajar;
+*membuat halaman kelola jadwal mengajar;
+======>sejauh ini tidak ada errors;
+
+30/04/2022 05:02;
+membuat halaman kelola jadwal mengajar;
+*membuat halaman dan action edit jadwal mengajar;
+*membuat action hapus jadwal mengajar;
+======>sejauh ini tidak ada errors;
+
+30/04/2022 10:55;
+membuat halaman kelola jadwal mengajar;
+membuat halaman dan action edit jadwal mengajar;
+membuat action hapus jadwal mengajar;
+*membuat halaman dan action login guru;
+======>sejauh ini tidak ada errors;
+
+
+30/04/2022 16:10;
+membuat halaman dan action login guru;
+*membuat halaman dashboard guru, Proses;
+
+30/04/2022 17:02;
+membuat halaman dan action login guru;
+membuat halaman dashboard guru;
+*membuat halaman kelas guru;
+======>sejauh ini tidak ada errors;
+
+30/04/2022 21:54;
+membuat halaman kelas guru;
+*membuat halaman upload materi guru, proses;
+======>sejauh ini tidak ada errors, fokus ke fitur guru be;
+
+01/05/2022 10:09;
+membuat halaman upload materi guru;
+membuat action upload materi guru;
+menampilkan materinya dalam halaman kelas guru;
+*membuat halaman dan action edit meteri guru;
+*membuat action hapus materi guru;
+======>sejauh ini tidak ada errors, fokus ke fitur guru be;
+
+01/05/2022 14:38;
+membuat halaman upload materi guru;
+membuat action upload materi guru;
+menampilkan materinya dalam halaman kelas guru;
+membuat halaman edit meteri guru;
+membuat action edit meteri guru;
+*membuat action hapus materi guru;
+======>sejauh ini tidak ada errors, fokus ke fitur guru be;
+
+09/05/2022 08:54;
+membuat action hapus materi guru;
+*membuat halaman login siswa, proses;
+*membuat action login siswa;
+*membuat halaman dashboard siswa;
+======>sejauh ini tidak ada errors, fokus ke fitur siswa be;
+
+10/05/2022 09:18;
+membuat action hapus materi guru;
+membuat halaman login siswa;
+membuat action login siswa;
+*membuat halaman dashboard (pilih mapel) siswa;
+
+10/05/2022 16:33;
+membuat halaman login siswa;
+membuat action login siswa;
+membuat halaman dashboard (pilih mapel) siswa;
+membuat dan menampilkan materi dalam kelas siswa;
+*membuat halaman dan action kumpul tugas siswa;
+tes ======>sejauh ini tidak ada errors, jadi lanjutkan saja;
+
+11/05/2022 08:43;
+membuat halaman pengumpulan tugas untuk siswa;
+*membuat action pengumpulan tugas untuk siswa, proses;
+*membuat halaman dan menampilkan siswa yg pengumpul tugas di guru;
+tes ======>sejauh ini tidak ada errors, jadi lanjutkan saja;
+
+12/05/2022 13:55;
+membuat halaman pengumpulan tugas untuk siswa;
+membuat action pengumpulan tugas untuk siswa;
+*membuat halaman dan menampilkan siswa yg pengumpul tugas di guru;
+tes ======>sejauh ini tidak ada errors, jadi lanjutkan saja;
+
+15/05/2022 15:53;
+membuat halaman dan menampilkan tugas yg dikumpul, agar tidak mengumpul 2x tugas yg sama;
+*membuat halaman dan menampilkan siswa yg pengumpul tugas di guru;
+tes ======>sejauh ini tidak ada errors, jadi lanjutkan saja;
+
+26/05/2022 09:22;
+*membuat halaman dan menampilkan siswa yg pengumpul tugas di guru, proses;
+
+26/05/2022 14:30;
+membuat halaman dan menampilkan siswa yg pengumpul tugas di guru;
+*halaman guru memberi nilai tugas materi siswa;
+*action guru memberi nilai tugas materi siswa;
+*action guru menghapus tugas materi siswa;
+tes ======>sejauh ini tidak ada errors, jadi lanjutkan saja;
+
+01/06/2022 15.40;
+membuat halaman dan menampilkan siswa yg pengumpul tugas di guru;
+halaman guru memberi nilai tugas materi siswa;
+*action guru memberi nilai tugas materi siswa, proses;
+*action guru menghapus tugas materi siswa;
+tes ======>sejauh ini tidak ada errors, jadi lanjutkan saja;
+
+02/06/2022 13.42;
+membuat halaman dan menampilkan siswa yg pengumpul tugas di guru;
+halaman guru memberi nilai tugas materi siswa;
+action guru memberi nilai tugas materi siswa;
+*action guru menghapus tugas materi siswa;
+tes ======>sejauh ini tidak ada errors, jadi lanjutkan saja;
+
+06/06/2022 18.16;
+membuat halaman dan menampilkan siswa yg pengumpul tugas di guru;
+halaman guru memberi nilai tugas materi siswa;
+action guru memberi nilai tugas materi siswa;
+action guru menghapus tugas materi siswa;
+*halaman buat absensi, guru;
+*action buat absensi, guru;
+tes ======>sejauh ini tidak ada errors, jadi lanjutkan saja;
+
+
+//revisi
+21/07/2022 23.30;
+tambah merk (kelas,mapel), 
+*pisahkan materi dan tugas, tinggal bagian tugas;
+guru siapin materi nanti kirim 1 1, 
+*absensi; 
+target 24/07
+
+22/07/2022 9.29;
+halaman upload tugas, guru;
+action upload tugas, guru;
+*halaman semua tugas, guru;
+*absensi; 
+target 24/07
+
+22/07/2022 22.04;
+halaman semua tugas, guru;
+halaman edit tugas, guru;
+action edit tugas, guru;
+hapus tugas, guru;
+posting tugas, guru;
+
+*halaman semua tugas, siswa;
+*halaman kumpul tugas, siswa;
+*action kumpul tugas, siswa;
+
+*absensi; 
+target 24/07
+
+
+//=====================================
+23/07/2022 10.11;
+
+halaman semua tugas, siswa;
+halaman kumpul tugas, siswa;
+action kumpul tugas, siswa;
+
+*halaman semua tugas siswa, guru;
+*halaman nilai tugas siswa, guru;
+*action nilai tugas siswa, guru;
+
+*absensi; 
+target 24/07
+
+//=====================================
+24/07/2022 00.05;
+
+halaman semua tugas siswa, guru;
+halaman nilai tugas siswa, guru;
+action nilai tugas siswa, guru;
+
+*absensi; 
+target 24/07
+
+
+//=====================================
+24/07/2022 14.40;
+
+halaman semua absensi, guru;
+halaman buat absensi, guru;
+action buat absensi, guru;
+*halaman edit absensi, guru;
+*action edit absensi, guru;
+*hapus absensi, guru;
+*lihat siswa absensi, guru;
+
+
+//=====================================
+24/07/2022 21.10;
+
+halaman edit absensi, guru;
+action edit absensi, guru;
+*hapus absensi, guru;
+*lihat siswa absensi, guru;
+
+//=====================================
+25/07/2022 09.42;
+
+halaman edit absensi, guru;
+action edit absensi, guru;
+hapus absensi, guru;
+lihat siswa absensi, guru;
+
+halaman lihat absensi, siswa;
+halaman kumpul absensi, siswa;
+action kumpul absensi, siswa;
+
+==>selesai;
+
+revisi selesai;
+
+//=============================================================
+//lanjutkan skripsi;
+
+07/10/2022 10:05;
+*membuat fitur quis;
+
+10/10/2022 19:37;
+mengganti logo;
+*membuat fitur quis;
+
+12/10/2022 09.20;
+halaman semua quis guru, proses;
+*halaman buat soal quis guru;
+*action buat soal quis guru;
+*halaman edit soal quis guru;
+*action edit soal quis guru;
+*action hapus soal quis guru;
+
+
+14/10/2022 11.17;
+halaman semua quis guru;
+*halaman buat quis guru, proses;
+*action buat quis guru;
+
+*soal pilgan
+*soal essay
+*halaman edit soal quis guru;
+*action edit soal quis guru;
+*action hapus soal quis guru;
+
+
+16/10/2022 11.05;
+halaman semua quis guru;
+halaman buat quis guru;
+*action buat quis guru;
+
+*soal pilgan
+*soal essay
+*halaman edit soal quis guru;
+*action edit soal quis guru;
+*action hapus soal quis guru;
+
+//========================
+16/11/2022 23.47;
+
+action buat quis guru;
+
+*halaman soal pilgan, proses;
+*action soal pilgan;
+
+
+*soal essay
+*halaman edit soal quis guru;
+*action edit soal quis guru;
+*action hapus soal quis guru;
+
+
+//========================
+06/12/2022 23.54;
+
+action buat quis guru;
+
+//== revisi ===
+*membuat jadwal mengajar bertabel;
+*posting materi guru ke siswa otomatis sesuai tanggal dan jam;
+*membuat tugas memiliki tanggal akhir pengumpulan;
+*membuat tanggal pengumpulan tugas di siswa;
+*membuat nilai menjadi input;
+*menampilkan siswa yg belum mengumpulan tugas;
+//==
+
+*halaman soal pilgan, proses;
+*action soal pilgan;
+
+
+*soal essay
+*halaman edit soal quis guru;
+*action edit soal quis guru;
+*action hapus soal quis guru;
+
+
+//========================
+11/12/2022 15.14;
+
+action buat quis guru;
+
+//== revisi ===
+*membuat jadwal mengajar bertabel, proses;==
+*posting materi guru ke siswa otomatis sesuai tanggal dan jam;
+*membuat tugas memiliki tanggal akhir pengumpulan;
+*membuat tanggal pengumpulan tugas di siswa;
+*membuat nilai menjadi input;
+*menampilkan siswa yg belum mengumpulan tugas;
+//==
+
+*halaman soal pilgan, proses;
+*action soal pilgan;
+
+
+*soal essay
+*halaman edit soal quis guru;
+*action edit soal quis guru;
+*action hapus soal quis guru;
+
+//========================
+13/12/2022 0.29;
+
+action buat quis guru;
+
+//== revisi ===
+membuat jadwal mengajar bertabel;
+*posting materi guru ke siswa otomatis sesuai tanggal dan jam;
+*membuat tugas memiliki tanggal akhir pengumpulan;
+*membuat tanggal pengumpulan tugas di siswa;
+*membuat nilai menjadi input;
+*menampilkan siswa yg belum mengumpulan tugas;
+//==
+
+*halaman soal pilgan, proses;
+*action soal pilgan;
+
+
+*soal essay
+*halaman edit soal quis guru;
+*action edit soal quis guru;
+*action hapus soal quis guru;
+
+//========================
+//========================
+13/12/2022 17.11;
+
+action buat quis guru;
+
+//== revisi ===
+membuat jadwal mengajar bertabel;
+posting materi guru ke siswa otomatis sesuai tanggal dan jam;
+*membuat tugas memiliki tanggal akhir pengumpulan;
+*membuat tanggal pengumpulan tugas di siswa;
+*membuat nilai menjadi input;
+*menampilkan siswa yg belum mengumpulan tugas;
+//==
+
+*halaman soal pilgan, proses;
+*action soal pilgan;
+
+
+*soal essay
+*halaman edit soal quis guru;
+*action edit soal quis guru;
+*action hapus soal quis guru;
+
+
+//========================
+//========================
+14/12/2022 10.40;
+
+action buat quis guru;
+
+//== revisi ===
+membuat jadwal mengajar bertabel;
+posting materi guru ke siswa otomatis sesuai tanggal dan jam;
+posting tugas guru ke siswa otomatis sesuai tanggal dan jam;
+*membuat tugas memiliki tanggal akhir pengumpulan;
+*membuat tanggal pengumpulan tugas di siswa;
+*membuat nilai menjadi input;
+*menampilkan siswa yg belum mengumpulan tugas;
+//==
+
+*halaman soal pilgan, proses;
+*action soal pilgan;
+
+
+*soal essay
+*halaman edit soal quis guru;
+*action edit soal quis guru;
+*action hapus soal quis guru;
+
+
+//========================
+//========================
+16/12/2022 0.04;
+
+action buat quis guru;
+
+//== revisi ===
+membuat jadwal mengajar bertabel;
+posting materi guru ke siswa otomatis sesuai tanggal dan jam;
+posting tugas guru ke siswa otomatis sesuai tanggal dan jam;
+membuat tugas memiliki tanggal akhir pengumpulan;
+*membuat tanggal pengumpulan tugas di siswa;
+*membuat nilai menjadi input;
+*menampilkan siswa yg belum mengumpulan tugas;
+//==
+
+*halaman soal pilgan, proses;
+*action soal pilgan;
+
+
+*soal essay
+*halaman edit soal quis guru;
+*action edit soal quis guru;
+*action hapus soal quis guru;
+
+
+//========================
+18/12/2022 12.52;
+
+action buat quis guru;
+
+//== revisi ===
+membuat jadwal mengajar bertabel;
+posting materi guru ke siswa otomatis sesuai tanggal dan jam;
+posting tugas guru ke siswa otomatis sesuai tanggal dan jam;
+membuat tugas memiliki tanggal akhir pengumpulan;
+*membuat tanggal pengumpulan tugas di siswa, proses;
+*membuat nilai menjadi input;
+*menampilkan siswa yg belum mengumpulan tugas;
+//==
+
+*halaman soal pilgan, proses;
+*action soal pilgan;
+
+
+*soal essay
+*halaman edit soal quis guru;
+*action edit soal quis guru;
+*action hapus soal quis guru;
+
+//========================
+//========================
+18/12/2022 14.53;
+
+action buat quis guru;
+
+//== revisi ===
+membuat tanggal pengumpulan tugas di siswa;
+membuat nilai menjadi input;
+*menampilkan siswa yg belum mengumpulan tugas;
+//==
+
+*halaman soal pilgan, proses;
+*action soal pilgan;
+
+
+*soal essay
+*halaman edit soal quis guru;
+*action edit soal quis guru;
+*action hapus soal quis guru;
+
+
+//========================
+18/12/2022 22.10;
+
+action buat quis guru;
+
+//== revisi ===
+memperbaiki absensi menjadi ada tanggal absensi dan hanya sekali;
+*menampilkan siswa yg belum mengumpulan tugas;
+//==
+
+*halaman soal pilgan, proses;
+*action soal pilgan;
+
+
+*soal essay
+*halaman edit soal quis guru;
+*action edit soal quis guru;
+*action hapus soal quis guru;
+
+//========================
+//========================
+19/12/2022 18.02;
+
+action buat quis guru;
+
+//== revisi ===
+memperbaiki absensi menjadi ada tanggal absensi dan hanya sekali;
+*menampilkan siswa yg belum mengumpulkan tugas, proses;
+//==
+
+*halaman soal pilgan, proses;
+*action soal pilgan;
+
+
+*soal essay
+*halaman edit soal quis guru;
+*action edit soal quis guru;
+*action hapus soal quis guru;
+
+
+//========================
+19/12/2022 23.12;
+
+action buat quis guru;
+
+//== revisi ===
+memperbaiki absensi menjadi ada tanggal absensi dan hanya sekali;
+*menampilkan siswa yg belum mengumpulkan tugas, proses;
+//==
+
+halaman soal pilgan;
+action soal pilgan;
+*halaman edit soal pilgan;
+*action edit soal pilgan;
+*action hapus soal pilgan;
+
+
+*soal essay
+*halaman edit soal quis guru;
+*action edit soal quis guru;
+*action hapus soal quis guru;
+
+
+//========================
+//========================
+20/12/2022 22.09;
+
+action buat quis guru;
+
+//== revisi ===
+memperbaiki absensi menjadi ada tanggal absensi dan hanya sekali;
+*menampilkan siswa yg belum mengumpulkan tugas, proses;
+//==
+
+halaman soal pilgan;
+action soal pilgan;
+*halaman edit soal pilgan, proses;
+*action edit soal pilgan;
+*action hapus soal pilgan;
+
+
+*soal essay
+*halaman edit soal quis guru;
+*action edit soal quis guru;
+*action hapus soal quis guru;
+
+
+
+//========================
+21/12/2022 13.05;
+
+action buat quis guru;
+
+//== revisi ===
+memperbaiki absensi menjadi ada tanggal absensi dan hanya sekali;
+*menampilkan siswa yg belum mengumpulkan tugas, proses;
+//==
+
+halaman soal pilgan;
+action soal pilgan;
+*halaman edit soal pilgan, proses;
+*action edit soal pilgan;
+*action hapus soal pilgan;
+
+
+*soal essay
+*halaman edit soal quis guru;
+*action edit soal quis guru;
+*action hapus soal quis guru;
+
+
+//========================
+//========================
+21/12/2022 16.55;
+
+action buat quis guru;
+
+//== revisi ===
+memperbaiki absensi menjadi ada tanggal absensi dan hanya sekali;
+*menampilkan siswa yg belum mengumpulkan tugas, proses;
+//==
+
+
+halaman edit soal pilgan;
+*action edit soal pilgan;
+*action hapus soal pilgan;
+
+
+*soal essay
+*halaman edit soal quis guru;
+*action edit soal quis guru;
+*action hapus soal quis guru;
+
+
+
+//========================
+22/12/2022 00.02;
+
+action buat quis guru;
+
+//== revisi ===
+memperbaiki absensi menjadi ada tanggal absensi dan hanya sekali;
+*menampilkan siswa yg belum mengumpulkan tugas, proses;
+//==
+
+
+halaman edit soal pilgan;
+action edit soal pilgan;
+action hapus soal pilgan;
+
+*halaman buat soal essay;
+*action buat soal essay;
+*halaman edit soal quis guru;
+*action edit soal quis guru;
+*action hapus soal quis guru;
+
+
+//========================
+//========================
+22/12/2022 15.43;
+
+action buat quis guru;
+
+//== revisi ===
+memperbaiki absensi menjadi ada tanggal absensi dan hanya sekali;
+*menampilkan siswa yg belum mengumpulkan tugas, proses;
+//==
+
+
+halaman buat soal essay;
+action buat soal essay;
+*halaman edit soal quis essay guru;
+*action edit soal quis essay guru;
+*action hapus soal quis essay guru;
+
+
+
+//========================
+23/12/2022 21.48;
+
+action buat quis guru;
+
+//== revisi ===
+memperbaiki absensi menjadi ada tanggal absensi dan hanya sekali;
+*menampilkan siswa yg belum mengumpulkan tugas, proses;
+//==
+
+
+halaman edit soal quis essay guru;
+action edit soal quis essay guru;
+action hapus soal quis essay guru;
+
+*halaman soal pilgan users;
+*action soal pilgan users;
+
+
+
+//========================
+//========================
+24/12/2022 23.12;
+
+*menampilkan semua judul quis users, proses;
+*halaman soal pilgan users;
+*action soal pilgan users;
+
+
+//========================
+25/12/2022 23.08;
+
+menampilkan semua judul quis users;
+menampilkan alert quis;
+*halaman soal pilgan users;
+*action soal pilgan users;
+
+//========================
+//========================
+26/12/2022 23.48;
+
+halaman soal pilgan users;
+action soal pilgan users;
+*menampilkan jawaban users (halaman pilgan);
+*mengupdate jawaban yg sudah ada users (action pilgan);
+
+
+//========================
+27/12/2022 20.40;
+
+menampilkan jawaban users (halaman pilgan);
+mengupdate jawaban yg sudah ada users (action pilgan);
+
+*halaman soal essay users;
+*action soal essay users;
+
+//========================
+//========================
+28/12/2022 15.10;
+
+halaman soal essay users;
+action soal essay users;
+
+*halaman semua nama quis siswa, guru;
+*halaman koreksi jawaban essay siswa, guru;
+
+
+//========================
+29/12/2022 13.19;
+
+halaman semua nama quis siswa pilgan, guru;
+*halaman semua jawaban quis siswa pilgan, guru;
+*action download excel pilgan, guru;
+
+*halaman koreksi jawaban essay siswa, guru;
+
+//========================
+//========================
+31/12/2022 19.50;
+
+halaman semua nama quis siswa pilgan, guru;
+halaman semua jawaban quis siswa pilgan, guru;
+*action download excel pilgan, guru;
+
+*halaman koreksi jawaban essay siswa, guru;
+
+
+//========================
+01/01/2023 00.45;
+
+halaman semua nama quis siswa pilgan, guru;
+halaman semua jawaban quis siswa pilgan, guru;
+action download excel pilgan, guru;
+
+*halaman koreksi jawaban essay siswa, guru;
+
+
+//========================
+//========================
+01/01/2023 18.03;
+
+halaman semua nama quis siswa essay, guru;
+halaman semua jawaban quis siswa essay, guru;
+action nilai jawaban essay, guru;
+
+*action download excel essay, guru;
+
+
+//========================
+01/01/2023 22.06;
+
+halaman semua nama quis siswa essay, guru;
+halaman semua jawaban quis siswa essay, guru;
+action nilai jawaban essay, guru;
+action download excel essay, guru;
+
+selesai
+
+//========================
+07/04/2023 15.22;
+//sudah di setting sesuai kebutuhan smkn4 tanjung jabung timur;
+
+//========================
+07/04/2023 19.54;
+//sudah di setting sesuai kebutuhan smkn4 tanjung jabung timur;
+//memperbaiki action logout;
+
+
+//========================
+10/04/2023 12.35;
+//memperbaiki tampilan tabel;
+//action naik kelas;
+//selesai;
+
+//========================
+11/04/2023 23.19;
+//mamperbaiki yang kurang;
+//selesai;
+
+
+
+
+
+
+
+
+
+
+
+
+//================================================================================
+
+//mencari 1 data berdasarkan id;
+DataDB.findbyId(req.params.idusers,function(err,users){
+    if(users){
+        ...............
+    }
+});
+
+//mencari 1 data berdasarkan selain id, misal Nik;
+DataDB.findOne({nik:8020190090}).then(users=>{
+    if(users){
+        ...............
+    }
+});
+
+//=====================================
+
+//update 1 data berdasarkan id;
+DataDB.findbyIdAndUpdate(req.params.idusers,{
+        nama:'wahyu_illahi07',
+        kelas:'tkj 2'
+        .................
+        },function(err){
+            if(err){
+                console.log(err);
+            }else{
+                ..............
+            }
+});
+
+//=====================================
+
+//menampilkan semua data, semua tanpa terkecuali;
+let ListUsers=[];
+DataDB.find(function(err,users){
+    if(users){
+        //jika ada;
+
+        for(data of users){
+            ListUsers.push({
+                id:data.id,
+                nama:data.nama,
+                nik:data.nik
+            });
+        }
+        .........
+    }else{
+        //jika tidak ada;
+        .........
+    }
+});
+
+//menampilkan semua data, tapi tidak semua misal siswa kelas 12 tkj2 saja;
+let ListUsers=[];
+DataDB.find({ kelas:'12', lokal:'tkj2' }).then(users=>{
+    if(users){
+        //jika ada;
+
+        for (data of users){
+            ListUsers.push({
+                id:data.id,
+                nama:data.nama,
+                nik:data.nik
+            });
+        }
+        .............
+    }else{
+        //jika tidak ada;
+        .............
+    }
+});
+
+//=====================================
+
+//menghapus berdasarkan id;
+DataDB.findbyIdAndDelete(req.params.idusers,function(){
+    ................
+});

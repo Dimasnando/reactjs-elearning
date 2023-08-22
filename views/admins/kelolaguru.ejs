@@ -1,0 +1,55 @@
+<%include ./navbaradmin%>
+
+<div class="container" style=" overflow: scroll;">
+
+    <div id="layoutSidenav_content">
+      <main>
+              <div class="card mb-4" style="color: #18225D;">
+                  <div class="card-header">
+                      <i class="fas fa-table mr-1"></i>
+                      Semua Akun Guru
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                              <thead>
+                                  <tr>
+                                      <th>No</th>
+                                      <th>Nama Guru</th>
+                                      <th>NIP</th>
+                                      <th>Alamat Email</th>
+                                      <th>Action</th>
+                                  </tr>
+                              </thead>
+                              <tfoot>
+                                  <tr>
+                                    <th>No</th>
+                                    <th>Nama Guru</th>
+                                    <th>NIP</th>
+                                    <th>Alamat Email</th>
+                                    <th>Action</th>
+                                  </tr>
+                              </tfoot>
+                              <tbody>
+                                <% for (data of ListGurus){ %>
+                                  <tr>
+                                    <th scope="row"><%=data.no%></th>
+                                    <td><%=data.nama%> <%=data.gelar%></td>
+                                    <td><%=data.nip%></td>
+                                    <td><%=data.email%></td>
+                                    <td>
+                                      <a href="/admin/editguru/<%=data.id%>" class="btn m-1" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-edit"></i></a>
+                                      <a href="/admin/hapusguru/<%=data.id%>" class="btn m-1" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-trash-alt"></i></a>
+                                    </td>
+                                  </tr>
+                                  <% } %>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          
+      </main>
+    </div>
+
+</div>

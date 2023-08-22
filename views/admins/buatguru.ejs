@@ -1,0 +1,67 @@
+<%include ./navbaradmin%>
+
+<div class="container">
+    <center>
+        <div class="col-lg-8 col-md-8 p-3 border">
+            <h3 class="mb-30" style="color:#18225D ;">Buat Akun Guru</h3>
+            <%include ../massages%>
+            <form action="/admin/buatakun/guru" method="post">
+                <div class="mt-10">
+                    <input type="text" 
+                    name="nama"
+                    id="nama"
+                    placeholder="Nama Lengkap Guru"
+                    class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input type="text" 
+                    name="gelar"
+                    id="gelar"
+                    placeholder="Gelar Guru"
+                    class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input type="text" 
+                    name="nip"
+                    id="nip"
+                    placeholder="NIP Guru"
+                    class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input type="text" 
+                    name="hp"
+                    id="hp"
+                    placeholder="Nomer Ponsel Guru"
+                    class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input type="email" 
+                    name="email"
+                    id="email"
+                    placeholder="Email Guru"
+                    class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input type="password" 
+                    name="password1"
+                    id="password1"
+                    placeholder="Password Baru"
+                    class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input type="password" 
+                    name="password2"
+                    id="password2"
+                    placeholder="Ulangi Password Baru"
+                    class="single-input">
+                </div>
+
+                <div class="mt-10">
+                    <button type="submit" class="btn " style="color:#ccc ; background-color: #18225D; width: 45%;">Simpan</button>
+                    <a href="/admin/dashboard" class="btn " style="color:#ccc ; background-color: #18225D; width: 45%;">Kembali</a>
+                </div>
+                
+            </form>
+        </div>
+    </center>
+</div>

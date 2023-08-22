@@ -1,0 +1,37 @@
+<%include ./navbarguru%>
+
+<div class="container" style="overflow: scroll;">
+    <div class="row">
+        <div class="col-lg-10">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Tanggal</th>
+                    <th scope="col">Judul Absensi</th>
+                    <th scope="col">Deskripsi Absensi</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% for (data of ListKode){ %>
+                  <tr>
+                    <th scope="row"><%=data.tanggal%></th>
+                    <td><%=data.judul%></td>
+                    <td><%=data.deskripsi%></td>
+                    <td>
+                        <a href="/guru/lihat/absensi/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=data.id%>" class="btn mt-1" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-eye"></i> Lihat</a>
+                        <a href="/guru/edit/absensi/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=data.id%>" class="btn mt-1" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-edit"></i> Edit</a>
+                        <a href="/guru/hapus/absensi/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=data.id%>" class="btn mt-1" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-trash-alt"></i> Hapus</a>
+                    </td>
+                  </tr>
+                  <% } %>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-2">
+            <a href="/guru/buat/absensi/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>" class="btn mt-1 col-12" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-plus"></i> Buat Absensi</a>
+            <a href="/guru/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>" class="btn mt-1 col-12" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-chevron-left"></i> Kembali</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<%include ./navbarsiswa%>
+
+
+<div class="container-fluid">
+    <div class="row mt-10">
+
+
+        <div class="col-lg-9">
+          <h3>Tugas <%=mapel%></h3>
+          
+
+            <%for (dtmateri of ListTugasSiswa){ %>
+            <div class="card <%=dtmateri.tampilkan%>">
+                <h5 class="card-header"><%=dtmateri.tanggal%> s.d <%=dtmateri.tanggalakhir%></h5>
+                <div class="card-body">
+                    <h5 class="card-title"><%=dtmateri.namatugas%></h5>
+                    <p class="card-text"><%=dtmateri.keterangan%></p>
+
+                    <div class="gambar <%=dtmateri.gambar%> m-2">
+                        <center>
+                        <img src="/strong/<%=dtmateri.filename%>" width="200px" alt="">
+                        </center>
+                    </div>
+                    <div class="video <%=dtmateri.video%>">
+                        <center>
+                        <video width="320" height="240" controls>
+                            <source src="/strong/<%=dtmateri.filename%>" type="video/mp4">
+                        </video>
+                        </center>
+                    </div>
+                    <div class="document <%=dtmateri.document%>">
+                        <center>
+                        <i class="fas fa-file" style="font-size: 80px;"></i>
+                        <h6>Document</h6>
+                        </center>
+                    </div>
+
+                  <a href="/strong/<%=dtmateri.filename%>" class="btn" style="color:#ccc ; background-color: #18225D;" download="<%=dtmateri.originalname%>"><i class="fas fa-download"></i> Download Soal Tugas</a>
+                  <a href="/siswa/kumpultugas/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=siswa.id%>/<%=dtmateri.id%>" class="btn" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-eye"></i> Pengumpulan Tugas</a>
+                </div>
+              </div>
+            <% } %>
+
+
+        </div>
+
+
+        <div class="col-lg-3">
+            <a href="/siswa/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=siswa.id%>" class="btn col-lg-12" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-chevron-left"></i> Kembali</a>
+            <!-- <a href="/siswa/lihat/tugas/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=siswa.id%>" class="btn btn-primary col-lg-12 mt-2">Tugas</a>-->
+
+        </div>
+
+
+    </div>
+</div>

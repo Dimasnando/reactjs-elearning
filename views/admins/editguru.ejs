@@ -1,0 +1,67 @@
+<%include ./navbaradmin%>
+
+<div class="container">
+    <center>
+        <div class="col-lg-8 col-md-8 p-3 border">
+            <h3 class="mb-30" style="color:#828BB2 ;">Edit Akun Guru</h3>
+            <%include ../massages%>
+            <form action="/admin/editguru/<%=gurus.id%>" method="post">
+                <div class="mt-10">
+                    <input type="text" 
+                    name="nama"
+                    id="nama"
+                    class="single-input"
+                    value="<%=gurus.nama%>">
+                </div>
+                <div class="mt-10">
+                    <input type="text" 
+                    name="gelar"
+                    id="gelar"
+                    class="single-input"
+                    value="<%=gurus.gelar%>">
+                </div>
+                <div class="mt-10">
+                    <input type="text" 
+                    name="nip"
+                    id="nip"
+                    class="single-input"
+                    value="<%=gurus.nip%>">
+                </div>
+                <div class="mt-10">
+                    <input type="text" 
+                    name="hp"
+                    id="hp"
+                    class="single-input"
+                    value="<%=gurus.hp%>">
+                </div>
+                <div class="mt-10">
+                    <input type="email" 
+                    name="email"
+                    id="email"
+                    class="single-input"
+                    value="<%=gurus.email%>">
+                </div>
+                <div class="mt-10">
+                    <input type="text" 
+                    name="password1"
+                    id="password1"
+                    class="single-input"
+                    value="<%=gurus.password%>">
+                </div>
+                <div class="mt-10">
+                    <input type="text" 
+                    name="password2"
+                    id="password2"
+                    class="single-input"
+                    value="<%=gurus.password%>">
+                </div>
+
+                <div class="mt-10">
+                    <button type="submit" class="btn " style="color:#ccc ; background-color: #18225D; width: 45%;">Simpan</button>
+                    <a href="/admin/kelolaakun/guru" class="btn " style="color:#ccc ; background-color: #18225D; width: 45%;">Kembali</a>
+                </div>
+                
+            </form>
+        </div>
+    </center>
+</div>

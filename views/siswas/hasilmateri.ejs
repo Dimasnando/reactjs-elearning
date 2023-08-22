@@ -1,0 +1,24 @@
+<%include ./navbarsiswa%>
+
+<div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nama Tugas</th>
+            <th scope="col">Komentar Saya</th>
+            <th scope="col">Lihat Tugas</th>
+            <th scope="col">Nilai</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><%=tugasmateri.namatugas%></th>
+            <td><%=tugasmateri.keterangansiswa%></td>
+            <td><a href="/strong/<%=tugasmateri.filename%>" download>Download</a>
+              <br><%=tugasmateri.tanggalkumpul%></td>
+            <td><%=tugasmateri.nilai%>/100</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="/siswa/lihat/tugas/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=siswa.id%>" class="btn" style="color:#ccc ; background-color: #18225D;"><i class="fas fa-chevron-left"></i> Kembali</a>
+</div>

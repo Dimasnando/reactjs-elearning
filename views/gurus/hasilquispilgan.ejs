@@ -1,0 +1,57 @@
+<%include ./navbarguru%>
+
+<div class="container mt-4">
+
+        <div id="layoutSidenav_content">
+            <main>
+                    <div class="card mb-4" style="color: #18225D;">
+                        <div class="card-header">
+                            <i class="fas fa-table mr-1"></i>
+                            Nilai Hasil <%=quis.namaquis%> 
+                            <a href="/strong/Quis <%=mapel%> <%=quis.id%> <%=kelas%> <%=jurusan%> <%=lokal%>.xlsx" class="btn " style="color:#ccc ; background-color: #18225D;" download="Quis <%=mapel%> <%=quis.id%> <%=kelas%> <%=jurusan%> <%=lokal%>.xlsx"><i class="fas fa-file-excel"></i> Unduh Excel</a>
+                            <a href="/guru/rekap/quis/Pilgan/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=quis.id%>" class="btn " style="color:#ccc ; background-color: #18225D;"><i class="far fa-sticky-note"></i> Rekap Nilai</a>
+                            <a href="/guru/quis/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>" class="btn " style="color:#ccc ; background-color: #18225D;"><i class="fas fa-chevron-left"></i> Kembali</a>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Nama Siswa</th>
+                                            <th>Tanggal Mengerjakan</th>
+                                            <th>Nilai</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Nama Siswa</th>
+                                            <th>Tanggal Mengerjakan</th>
+                                            <th>Nilai</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <%for(data of ListNilai){%>
+                                        <tr>
+                                            <td><%=data.no%></td>
+                                            <td><%=data.nama%></td>
+                                            <td><%=data.tanggal%></td>
+                                            <td> <h6>Nilai <%=data.nilai%></h6> Benar <%=data.benar%> dari <%=data.jumso%> Soal
+                                            </td>
+                                            <td> <a href="/guru/cek/hasil/Pilgan/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=data.idsiswa%>/<%=quis.id%>" class="btn " style="color:#ccc ; background-color: #18225D;"><i class="fas fa-eye"></i> lihat Jawaban</a>
+                                            </td>
+                                        </tr>
+                                        <%}%>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                
+            </main>
+        </div>
+
+</div>

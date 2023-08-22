@@ -1,0 +1,90 @@
+<%include ./navbaradmin%>
+
+<div class="container">
+    <center>
+        <div class="col-lg-8 col-md-8 p-3 border">
+            <h3 class="mb-30" style="color:#828BB2 ;">Edit Akun <%=siswas.ndepan%> <%=siswas.nbelakang%></h3>
+            <%include ../massages%>
+            <form action="/admin/editsiswa/<%=siswas.id%>" method="post">
+                <div class="mt-10">
+                    <input type="text" 
+                    name="ndepan"
+                    id="ndepan"
+                    value="<%=siswas.ndepan%>"
+                    class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input type="text" 
+                    name="nbelakang"
+                    id="nbelakang"
+                    value="<%=siswas.nbelakang%>"
+                    class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input type="text" 
+                    name="nis"
+                    id="nis"
+                    value="<%=siswas.nis%>"
+                    class="single-input">
+                </div>
+                <div class="mt-10">
+                        <div class="form-select">
+                        <select 
+                        id="angkatan" 
+                        name="angkatan">
+                            <option value="<%=siswas.angkatan%>">Kelas: <%=siswas.angkatan%></option>
+                             <option value="XII">XII</option>
+                            <option value="XI">XI</option>
+                            <option value="X">X</option>
+                        </select>
+                        </div>
+                </div>
+                <div class="mt-10">
+                    <div class="form-select">
+                    <select 
+                    id="jurusan" 
+                    name="jurusan">
+                    <option value="<%=siswas.jurusan%>">Jurusan: <%=siswas.jurusan%></option>
+                    <option value="IPA">Ilmu Pengetahuan Alam (IPA)</option>
+                    <option value="IPS">Ilmu Pengetahuan Sosial (IPS)</option>
+                    </select>
+                    </div>
+                </div> 
+                <div class="mt-10">
+                    <input type="text" 
+                    name="lokal"
+                    id="lokal"
+                    value="<%=siswas.lokal%>"
+                    class="single-input">
+                </div> 
+                <div class="mt-10">
+                    <input type="email" 
+                    name="email"
+                    id="email"
+                    value="<%=siswas.email%>"
+                    class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input type="text" 
+                    name="password1"
+                    id="password1"
+                    value="<%=siswas.password%>"
+                    class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input type="text" 
+                    name="password2"
+                    id="password2"
+                    value="<%=siswas.password%>"
+                    class="single-input">
+                </div>
+
+                <div class="mt-10">
+                    <button type="submit" class="btn" style="color:#ccc ; background-color: #18225D; width: 45%;">Simpan</button>
+                    <a href="/admin/kelolaakun/siswa" class="btn" style="color:#ccc ; background-color: #18225D; width: 45%;">Kembali</a>
+                </div>
+                
+            </form>
+        </div>
+    </center>
+</div>

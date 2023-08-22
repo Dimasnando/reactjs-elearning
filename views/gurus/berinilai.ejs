@@ -1,0 +1,43 @@
+<%include ./navbarguru%>
+
+<div class="container">
+    <div class="row mt-1">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+    
+            <div class="card">
+                <h5 class="card-header">Tugas <%=dttugassiswa.namatugas%></h5>
+                <div class="card-body">
+                  <h5 class="card-title"><%=dttugassiswa.namasiswa%></h5>
+                  <p class="card-text"><%=dttugassiswa.keterangansiswa%></p>
+                  <a href="/strong/<%=dttugassiswa.filename%>" class="btn" download>Unduh file</a>
+                    <form action="/guru/berinilai/tugassiswa/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=materi.id%>/<%=dttugassiswa.id%>" method="post">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Nilai</label>
+                            <input type="number" 
+                            class="form-control"
+                            id="nilai"
+                            name="nilai"
+                            value="<%=dttugassiswa.nilai%>"
+                            minlength="0">
+                          </div>
+
+                        <center>
+
+                          
+                          <button type="submit" class="btn" style="color:#ccc ; background-color: #18225D; width: 45%;">Simpan</button>
+                          <a href="/guru/pengumpulan/tugas/<%=kelas%>/<%=jurusan%>/<%=lokal%>/<%=mapel%>/<%=guru.id%>/<%=materi.id%>" class="btn" style="color:#ccc ; background-color: #18225D; width: 45%;">Kembali</a>
+                        </center>
+
+                    </form>
+
+                  
+                </div>
+            </div>
+    
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
+
+
+</div>
